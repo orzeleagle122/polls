@@ -1,21 +1,24 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const initialState={}
+const initialState = {
+    userInfo: [],
+    isLogin: true,
+}
 
 const slice = createSlice({
     name: 'user',
     initialState,
-    reducers:{
-        login(state,action){
+    reducers: {
+        login(state, action) {
 
         }
     }
 })
 
-export const {reducer}=slice;
+export const {reducer} = slice;
 
 // ACTIONS
 
-export const login = (data) => async (dispatch)=>{
+export const login = (data) => async (dispatch) => {
     console.log(data);
 }
